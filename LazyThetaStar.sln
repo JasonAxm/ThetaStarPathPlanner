@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LazyThetaStar", "LazyThetaStar\LazyThetaStar.vcxproj", "{D05D8A58-38F0-4956-BBE3-22A7E03F076D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PathPlanner", "PathPlanner\PathPlanner.vcxproj", "{D11008AC-BD86-4D24-AF6C-AD22C7BFFB85}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LazyThetaStar", "PathPlannerDemo\LazyThetaStar.vcxproj", "{D05D8A58-38F0-4956-BBE3-22A7E03F076D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D11008AC-BD86-4D24-AF6C-AD22C7BFFB85} = {D11008AC-BD86-4D24-AF6C-AD22C7BFFB85}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,6 +16,10 @@ Global
 		Release|Win32 = Release|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D11008AC-BD86-4D24-AF6C-AD22C7BFFB85}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D11008AC-BD86-4D24-AF6C-AD22C7BFFB85}.Debug|Win32.Build.0 = Debug|Win32
+		{D11008AC-BD86-4D24-AF6C-AD22C7BFFB85}.Release|Win32.ActiveCfg = Release|Win32
+		{D11008AC-BD86-4D24-AF6C-AD22C7BFFB85}.Release|Win32.Build.0 = Release|Win32
 		{D05D8A58-38F0-4956-BBE3-22A7E03F076D}.Debug|Win32.ActiveCfg = Debug|Win32
 		{D05D8A58-38F0-4956-BBE3-22A7E03F076D}.Debug|Win32.Build.0 = Debug|Win32
 		{D05D8A58-38F0-4956-BBE3-22A7E03F076D}.Release|Win32.ActiveCfg = Release|Win32
